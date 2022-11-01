@@ -47,6 +47,7 @@
                         <input name="btniniciar" class="btn btn-primary" type="submit" value="iniciar">
                     </div>
                     <div class="my-3">
+					<!--registrar -->
                         <span>No tienes cuenta? <a href="registrar.php">Registrar</a></span>   
                     </div>
                 </form>
