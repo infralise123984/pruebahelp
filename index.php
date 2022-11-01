@@ -25,6 +25,7 @@ if(empty($_SESSION)){
                 <a href="index.php"><img src="img/logo.png" alt=""></a>
                 </div>
                 <div class="col-12 col-sm-8 col-lg-6 buscar mb-2 mb-sm-0">
+                    <!-- formulario de barra de busqueda -->
                     <form action="">
                         <div class="row g-2 g-0">
                             <div class="col-10">
@@ -36,6 +37,7 @@ if(empty($_SESSION)){
                         </div>
                     </form>
                 </div>
+                <!-- barra de navegacion de iconos -->
                 <nav class="col-12 col-sm-3 col-lg-2 menu d-flex justify-content-between ml-auto mb-2 mb-sm-0">
                     <a href="#"><i class="icon-users"></i></a>
                     <a href="#"><i class="icon-bell-alt"></i></a>  
@@ -46,8 +48,7 @@ if(empty($_SESSION)){
             </div>
         </div>
     </header>
-    <main class="container m-lg-auto justify-content-between    ">
-        
+    <main class="container m-lg-auto justify-content-between    ">       
             <!-- barra lateral izquierda -->
             <div class="col barra-lateral-izquierda m-lg-auto justify-content-between">
                 <nav>
