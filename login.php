@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/estilos.css">
     <link rel="shortcut icon" href="img/logo.png">
-    <title>iHelp</title>
+    <title>iHolp</title>
     
 
 </head>
