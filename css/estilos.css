@@ -1,0 +1,235 @@
+body{
+    background: linear-gradient(to right, rgb(255, 216, 132),rgb(255, 211, 115) );
+}.bg{
+    background-image: url(img/dos.png);
+    background-position: center center;
+}
+
+
+a { color: #0ba7c2; }
+a:hover { text-decoration: underline; }
+
+/*HEADER*/
+
+header {
+    background: #474747;
+    padding: 1vh 0;
+    width: auto;
+}
+
+header .logo img {
+    height: 4.5vh;
+}
+
+/*BUSCAR*/
+header .buscar form input[type="text"] {
+    width: 100%;
+    background: #fff;
+    border: none;
+    font-size: 1.8vh;
+    padding: 0 2.5vh;
+    height: 3.7vh;
+    line-height: 3.7vh;
+    border-radius: 0.5vh;
+    color: #6d6d6d;
+    font-family: 'Open Sans', sans-serif;
+    transition: 150ms ease 10ms
+}
+
+header .buscar form button {
+    width: 100%;
+    background: #fff;
+    border: none;
+    font-size: 1.8vh;
+    padding: 0 1.5vh;
+    height: 3.7vh;
+    line-height: 1.5vh;
+    border-radius: 0.5vh;
+    cursor: pointer;
+    color: #6d6d6d;
+    transition: 150ms ease 10ms;
+}
+header .buscar form button:hover {
+    background: #c2b60b;
+    color: #fff;
+}
+/*MENU*/
+header .menu a {
+    color: rgba(255, 255, 255,.8);
+    text-decoration: none;
+}
+header .menu a:hover {
+    
+    color: rgba(255, 255, 255,.1);
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+header .menu .imagen {
+    display: inline-block;
+    width: 3.2vh;
+    height: 3.2vh;
+    overflow: hidden;
+}
+
+header .menu .imagen img {
+    border-radius: 15vh;
+}
+
+/* -- main -- */
+main {
+    padding-top: 20px;
+}
+
+
+/* -- barra lateral izquierda --*/
+
+main .barra-lateral-izquierda {
+    float: left;
+    padding-bottom: 0;
+    padding-left: 0;
+    width: 23vh;
+}
+
+main .barra-lateral-izquierda nav {
+    border-bottom: 1px solid #c7c8ca;
+    padding-bottom: 20px;
+}
+
+main .barra-lateral-izquierda nav a {
+    display: block;
+    padding: 3px;
+    font-family: 'Roboto', sans-serif;
+    color: #161414;
+    transition: background-color 150ms ease ;
+}
+
+main .barra-lateral-izquierda nav a:hover {
+    background-color: #5a5d728f;
+    text-decoration: none;
+}   
+
+main .barra-lateral-izquierda nav a i {
+    margin-right: 10px;
+}
+
+/* -- barra lateral derecha --*/
+
+main .barra-lateral-derecha {
+    float: right;
+    padding-bottom: 10px;
+    padding-left: 0;
+}
+
+main .barra-lateral-derecha nav {
+    border-bottom: 1px solid #6fad0b;
+    width: 290px;
+    padding-bottom: 20px;
+}
+
+main .barra-lateral-derecha nav a {
+    display: block;
+    padding: 3px;
+    font-family: 'Roboto', sans-serif;
+    color: #5bd1b4;
+}
+
+main .barra-lateral-derecha nav a:hover {
+    background: #ca8    d1a;
+    text-decoration: none;
+}
+
+main .barra-lateral-derecha nav a i {
+    margin-left: 10px;
+}
+
+/* -- card --*/
+
+
+
+
+
+/* --- mediaqueries --*/
+
+@media screen and (max-width: 575px) {
+    header .menu {
+        padding: 15px 15px 0 15px;
+    }
+}
+
+/* --- toggle on --*/
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+  }
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: rgb(228, 120, 120);
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+input:checked + .slider {
+    background-color: #2196F3;
+}
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+}
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+  
+  
+  .slider.round {
+    border-radius: 34px;
+}
+  
+  .slider.round:before {
+    border-radius: 50%;
+}
+
+.imagenperfil {
+    width: 18vh;
+}
+
+
+
+/*--- CSS carta*/
+.card{
+    background: rgb(150, 150, 150, 0);
+    border-radius: 1.5vh;
+}
+
+.card-block{
+    background: rgba(150, 150, 150, 0.596);
+    border-radius: 1.5vh;
+}
