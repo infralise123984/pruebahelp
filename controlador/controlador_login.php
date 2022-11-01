@@ -5,7 +5,7 @@ if(!empty($_POST["btniniciar"])){
        $mail=$_POST["email"];
        $contrasena=$_POST["password"];
        $sql=$conexion->query("select * from usuario where mail='$mail' and contraseña='$contrasena' ");
-       //$sql2=$conexion->query("select trabajo_id,id,desc_trabajo from usuario, trabajos where trabajo_id=id");
+       //$sql2=$conexion->query("select trabajo_id,id,desc_trabajo from usuario, trabajos where trabajo_id=trabajos.id");
        if ($datos=$sql->fetch_object()) {
         $_SESSION["rut"]=$datos->rut;
         $_SESSION["nombre"]=$datos->nombre;
