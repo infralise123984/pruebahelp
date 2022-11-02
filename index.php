@@ -38,6 +38,7 @@ if(empty($_SESSION)){
                     </form>
                 </div>
                 <!-- barra de navegacion de iconos -->
+                <!-- barra de navegacion de iconos -->
                 <nav class="col-12 col-sm-3 col-lg-2 menu d-flex justify-content-between ml-auto mb-2 mb-sm-0">
                     <a href="#"><i class="icon-users"></i></a>
                     <a href="#"><i class="icon-bell-alt"></i></a>  
