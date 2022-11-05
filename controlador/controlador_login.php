@@ -4,18 +4,17 @@ if(!empty($_POST["btniniciar"])){
     if (!empty ($_POST["email"]) and !empty ($_POST["password"])) {
        $mail=$_POST["email"];
        $contrasena=$_POST["password"];
-       $sql=$conexion->query("select * from usuario where mail='$mail' and contraseña='$contrasena' ");
-       //$sql2=$conexion->query("select trabajo_id,id,desc_trabajo from usuario, trabajos where trabajo_id=trabajos.id");
+       $sql=$conexion->query("SELECT rut,nombre,apellido,mail,contraseña,Publicacion_id,trabajos.desc_trabajo FROM usuario INNER JOIN trabajos ON  trabajos.id =usuario.trabajo_id where mail='$mail' and contraseña='$contrasena'");
+       $sql2=$conexion->query("SELECT trabajos.desc_trabajo  FROM usuario INNER JOIN trabajos ON  trabajos.id =usuario.trabajo_id ");
+      
        if ($datos=$sql->fetch_object()) {
         $_SESSION["rut"]=$datos->rut;
         $_SESSION["nombre"]=$datos->nombre;
         $_SESSION["apellido"]=$datos->apellido;
-        $fila = mysqli_fetch_array($sql);
-        // while ($fila=mysqli_fetch_row($sql2)){
-        //     $xd=$fila1[1];
-        //     // IDEA fila crear una sentencia sql que llame a la tabla de "trabajos" para que compare con la "idtrabajo" con la "id"
-        //     }
-        // $_SESSION["idtrabajo"]=$xd;
+        $_SESSION["idtrabajo"]=$datos->desc_trabajo;
+        
+        
+     
         
         
         header("location: index.php");

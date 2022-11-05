@@ -61,11 +61,15 @@ if(empty($_SESSION)){
                     <a href="controlador/controlador_cerrar_sesion.php"><i class="icon-cog"></i>Cerrar sesion</a>
                 </nav>
             </div>
+            
             <!-- barra lateral derecha -->
             <div class="col-1 barra-lateral-derecha m-lg-auto justify-content-between">
                 Contenido barra lateral derecha WIP
             </div>
-
+            <!-- publicacion -->
+            
+                
+            
             <!-- contenido principal -->
             <div class="mx-auto d-flex justify-content-between"> 
                <!-- <iframe src="pgperfil.php" frameborder="0" style="overflow: hidden; border:none; height:900vhx;width:300vh;"></iframe> -->
