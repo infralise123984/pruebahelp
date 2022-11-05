@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 01-11-2022 a las 01:43:14
+-- Tiempo de generación: 06-11-2022 a las 00:40:45
 -- Versión del servidor: 10.4.25-MariaDB
--- Versión de PHP: 8.1.10
+-- Versión de PHP: 7.4.30
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -20,6 +20,26 @@ SET time_zone = "+00:00";
 --
 -- Base de datos: `loginprueba`
 --
+
+-- --------------------------------------------------------
+
+--
+-- Estructura de tabla para la tabla `publicacion`
+--
+
+CREATE TABLE `publicacion` (
+  `id` int(50) NOT NULL,
+  `titulo` varchar(40) NOT NULL,
+  `info` text NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Volcado de datos para la tabla `publicacion`
+--
+
+INSERT INTO `publicacion` (`id`, `titulo`, `info`) VALUES
+(1, 'trabajo formateos', 'soy bueno en formateos esas cosas blablabla'),
+(2, 'armado muebles', 'armo bueble de tooo');
 
 -- --------------------------------------------------------
 
@@ -52,24 +72,31 @@ CREATE TABLE `usuario` (
   `apellido` varchar(15) DEFAULT NULL,
   `mail` varchar(80) DEFAULT NULL,
   `contraseña` varchar(30) DEFAULT NULL,
-  `trabajo_id` int(11) NOT NULL
+  `trabajo_id` int(11) NOT NULL,
+  `Publicacion_id` int(50) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
 -- Volcado de datos para la tabla `usuario`
 --
 
-INSERT INTO `usuario` (`rut`, `nombre`, `apellido`, `mail`, `contraseña`, `trabajo_id`) VALUES
-('221212122', 'juanito', 'perez', 'waton@gmail.com', '123', 1),
-('888888888', 'chupete', 'suazo', 'chupetin@gmail.com', 'Chupete98', 1),
-('12123123', 'Panchito', 'Rojas', 'Pancho777@gmail.com', 'Besitosenlacola123', 1),
-('12345345', 'Pedro', 'Pascal', 'Pascalgamer123@gmail.com', 'Pedrogamer45', 1),
-('2123123', 'Panchjo', 'Lepre', 'pancho@outlook.com', 'Perocomo123', 1),
-('12312312-3', 'Rigoberto', 'Gonzalez', 'sokotroko123@gmail.com', 'Contrasena123', 1);
+INSERT INTO `usuario` (`rut`, `nombre`, `apellido`, `mail`, `contraseña`, `trabajo_id`, `Publicacion_id`) VALUES
+('221212122', 'juanito', 'perez', 'waton@gmail.com', '123', 2, 1),
+('888888888', 'chupete', 'suazo', 'chupetin@gmail.com', 'Chupete98', 2, 2),
+('12123123', 'Panchito', 'Rojas', 'Pancho777@gmail.com', 'Besitosenlacola123', 1, 0),
+('12345345', 'Pedro', 'Pascal', 'Pascalgamer123@gmail.com', 'Pedrogamer45', 2, 0),
+('2123123', 'Panchjo', 'Lepre', 'pancho@outlook.com', 'Perocomo123', 1, 0),
+('12312312-3', 'Rigoberto', 'Gonzalez', 'sokotroko123@gmail.com', 'Contrasena123', 1, 0);
 
 --
 -- Índices para tablas volcadas
 --
+
+--
+-- Indices de la tabla `publicacion`
+--
+ALTER TABLE `publicacion`
+  ADD PRIMARY KEY (`id`);
 
 --
 -- Indices de la tabla `trabajos`
@@ -81,11 +108,18 @@ ALTER TABLE `trabajos`
 -- Indices de la tabla `usuario`
 --
 ALTER TABLE `usuario`
-  ADD KEY `trabajo_id` (`trabajo_id`);
+  ADD KEY `trabajo_id` (`trabajo_id`),
+  ADD KEY `Publicacion_id` (`Publicacion_id`);
 
 --
 -- AUTO_INCREMENT de las tablas volcadas
 --
+
+--
+-- AUTO_INCREMENT de la tabla `publicacion`
+--
+ALTER TABLE `publicacion`
+  MODIFY `id` int(50) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- AUTO_INCREMENT de la tabla `trabajos`
@@ -96,6 +130,12 @@ ALTER TABLE `trabajos`
 --
 -- Restricciones para tablas volcadas
 --
+
+--
+-- Filtros para la tabla `publicacion`
+--
+ALTER TABLE `publicacion`
+  ADD CONSTRAINT `publicacion_ibfk_1` FOREIGN KEY (`id`) REFERENCES `usuario` (`Publicacion_id`) ON UPDATE CASCADE;
 
 --
 -- Filtros para la tabla `usuario`
