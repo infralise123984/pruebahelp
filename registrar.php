@@ -44,7 +44,7 @@
                     </div>
                     <div class="mb-4">
                         <!-- texto formulario apellido -->
-                        <label for="apellido" class="form-label">Nombre</label>
+                        <label for="apellido" class="form-label">Apellido</label>
                         <input type="text" class="form-control" name="apellido" placeholder="Rojas" pattern="[a-zA-Z ]{2,20}"title="Solo letras">
                     </div>
                     <div class="mb-4">
