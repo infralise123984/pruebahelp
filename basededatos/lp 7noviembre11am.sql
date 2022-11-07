@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 07-11-2022 a las 06:53:59
+-- Tiempo de generación: 07-11-2022 a las 14:54:01
 -- Versión del servidor: 10.4.25-MariaDB
 -- Versión de PHP: 8.1.10
 
@@ -52,7 +52,29 @@ INSERT INTO `mensajes` (`msg_id`, `receptor_id`, `emisor_id`, `mensaje`) VALUES
 (11, '221212122', '12123123', 'yo soy pancho'),
 (12, '12123123', '221212122', 'y yo soy juanitop'),
 (13, '12123123', '221212122', 'hola'),
-(14, '221212122', '12123123', 'que pasa');
+(14, '221212122', '12123123', 'que pasa'),
+(15, '12345345', '221212122', 'papu'),
+(16, '12123123', '221212122', 'hola'),
+(17, '12123123', '221212122', 'asdasd'),
+(18, '221212122', '12123123', 'hoola'),
+(19, '221212122', '12123123', 'cpomo esptastas?'),
+(20, '221212122', '12123123', 'como has estado'),
+(21, '221212122', '12123123', 'me puedes ayudar?'),
+(22, '12123123', '221212122', 'hola'),
+(23, '12123123', '221212122', 'cabron'),
+(24, '12123123', '221212122', 'te odio'),
+(25, '12123123', '221212122', 'uwu'),
+(26, '12123123', '221212122', 'mentira'),
+(27, '221212122', '12123123', 'ya pero pa que tan choro'),
+(28, '221212122', '12123123', 'papu'),
+(29, '221212122', '12123123', 'oye'),
+(30, '221212122', '12123123', 'tio'),
+(31, '221212122', '12123123', 'hablame'),
+(32, '221212122', '12123123', 'que no conozco tiooo'),
+(33, '221212122', '12123123', 'olaaa'),
+(34, '12123123', '221212122', 'chao'),
+(35, '12123123', '221212122', '::::::::::::::::CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC'),
+(36, '888888888', '221212122', 'a');
 
 -- --------------------------------------------------------
 
@@ -107,19 +129,20 @@ CREATE TABLE `usuario` (
   `contraseña` varchar(30) DEFAULT NULL,
   `trabajo_id` int(11) NOT NULL,
   `img_perfil` varchar(255) NOT NULL,
-  `status` varchar(255) NOT NULL
+  `estado` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
 -- Volcado de datos para la tabla `usuario`
 --
 
-INSERT INTO `usuario` (`rut`, `nombre`, `apellido`, `mail`, `contraseña`, `trabajo_id`, `img_perfil`, `status`) VALUES
-('12123123', 'Panchito', 'Rojas', 'Pancho777@gmail.com', 'Besitosenlacola123', 1, '', ''),
-('12312312-3', 'Rigoberto', 'Gonzalez', 'sokotroko123@gmail.com', 'Contrasena123', 1, '', ''),
-('12345345', 'Pedro', 'Pascal', 'Pascalgamer123@gmail.com', 'Pedrogamer45', 2, '', ''),
-('2123123', 'Panchjo', 'Lepre', 'pancho@outlook.com', 'Perocomo123', 1, '', ''),
-('221212122', 'juanito', 'perez', 'waton@gmail.com', '123', 2, '', ''),
+INSERT INTO `usuario` (`rut`, `nombre`, `apellido`, `mail`, `contraseña`, `trabajo_id`, `img_perfil`, `estado`) VALUES
+('12123123', 'Panchito', 'Rojas', 'Pancho777@gmail.com', 'Besitosenlacola123', 1, '', 'Inactivo'),
+('12312312-3', 'Rigoberto', 'Gonzalez', 'sokotroko123@gmail.com', 'Contrasena123', 1, '', 'Inactivo'),
+('12345345', 'Pedro', 'Pascal', 'Pascalgamer123@gmail.com', 'Pedrogamer45', 2, '', 'Inactivo'),
+('2123123', 'Panchjo', 'Lepre', 'pancho@outlook.com', 'Perocomo123', 1, '', 'Inactivo'),
+('21246066-4', 'Manuel', 'Paredes', 'manup@gmail.com', 'Mequetrefe2626', 1, 'defaultpf', 'Inactivo'),
+('221212122', 'juanito', 'perez', 'waton@gmail.com', '123', 2, '', 'Activo'),
 ('888888888', 'chupete', 'suazo', 'chupetin@gmail.com', 'Chupete98', 2, '', '');
 
 --
@@ -159,7 +182,7 @@ ALTER TABLE `usuario`
 -- AUTO_INCREMENT de la tabla `mensajes`
 --
 ALTER TABLE `mensajes`
-  MODIFY `msg_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
+  MODIFY `msg_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=37;
 
 --
 -- Restricciones para tablas volcadas
