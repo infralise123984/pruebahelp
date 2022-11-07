@@ -53,10 +53,12 @@ if(empty($_SESSION)){
             <!-- barra lateral izquierda -->
             <div class="col barra-lateral-izquierda m-lg-auto justify-content-between">
                 <nav>
+                    <!-- aqui están los botones -->
                    <!-- <a href="#"><i class="icon-search"></i> Buscar empleo</a> 
                     <a href="#"><i class="icon-handshake-o"></i> Ofrecer empleo</a> -->
                     <a href="InteriorBotones/contenidomain.php" target="contenido"><i class="icon-file-image"></i> Publicaciones</a>
                     <a href="InteriorBotones/pgperfil.php" target="contenido"><i class="icon-user"></i> Perfil</a>
+                    <a href="vistas/usuarios.php" target="contenido"><i class="icon-chat"></i>Chat</a>
                     <a href="#"><i class="icon-cog"></i> Opciones</a>
                     <a href="controlador/controlador_cerrar_sesion.php"><i class="icon-cog"></i>Cerrar sesion</a>
                 </nav>
