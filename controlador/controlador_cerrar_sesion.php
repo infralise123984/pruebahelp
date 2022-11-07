@@ -1,5 +1,13 @@
 <?php
 session_start();
-session_destroy();
-header("location: ../login.php");
+include "../modelo/conexion.php";
+$rut=$_SESSION["rut"];
+$sql222=$conexion->query("UPDATE usuario SET estado = 'Inactivo' WHERE rut = '$rut'");
+if($sql222>0){
+    session_destroy();
+    header("location: ../login.php");
+}
+
+
+
 ?>

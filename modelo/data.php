@@ -12,7 +12,7 @@
         }else{
             $you = "";
         }
-        ($row['status'] == "Desconectado ahora") ? $offline = "offline" : $offline = "";
+        ($row['estado'] == "Desconectado ahora") ? $offline = "offline" : $offline = "";
         ($emisor_id == $row['rut']) ? $hid_me = "hide" : $hid_me = "";
         // Está es la version original del output
         // $output .= '<a href="chat.php?user_id='. $row['rut'] .'">
@@ -23,7 +23,7 @@
         //                 <p>'. $you . $msg .'</p>
         //             </div>
         //             </div>
-        //             <div class="status-dot '. $offline .'"><i class="fas fa-circle"></i></div>
+        //             <div class="estado-dot '. $offline .'"><i class="fas fa-circle"></i></div>
         //         </a>';
         $output .= '<a href="chat.php?user_id='. $row['rut'] .'">
                     <div class="content">
@@ -32,7 +32,7 @@
                         <p>'. $you . $msg .'</p>
                     </div>
                     </div>
-                    <div class="status-dot '. $offline .'"><i class="fas fa-circle"></i></div>
+                    <div class="estado-dot '. $offline .'"><i class="fas fa-circle"></i></div>
                 </a>';
     }
 ?>

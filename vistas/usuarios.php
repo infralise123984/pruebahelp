@@ -24,7 +24,7 @@ if(empty($_SESSION)){
           <!-- <img src="../modelo/images/<?php echo $row['img']; ?>" alt=""> -->
           <div class="details">
             <span><?php echo $row['nombre']. " " . $row['apellido'] ?></span>
-            <p><?php echo $row['status']; ?></p>
+            <p><?php echo $row['estado']; ?></p>
           </div>
         </div>
         <!-- <a href="../modelo/logout.php?logout_id=<?php echo $row['unique_id']; ?>" class="logout">Cerrar sesión</a> -->

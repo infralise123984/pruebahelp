@@ -24,7 +24,7 @@
         <!-- <img src="../modelo/images/<?php //echo $row['img']; ?>" alt=""> -->
         <div class="details">
           <span><?php echo $row['nombre']. " " . $row['apellido'] ?></span>
-          <p><?php echo $row['status']; ?></p>
+          <p><?php echo $row['estado']; ?></p>
         </div>
       </header>
       <div class="chat-box">

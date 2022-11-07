@@ -2,7 +2,8 @@
     session_start();
     include_once "config.php";
     $emisor_id = $_SESSION['rut'];
-    $sql = "SELECT * FROM usuario WHERE NOT rut = {$emisor_id} ";
+    // $sql = "SELECT * FROM usuario WHERE NOT rut = {$emisor_id} ";
+    $sql = "SELECT * FROM usuario WHERE NOT rut = '$emisor_id' ORDER BY nombre DESC";
     $query = mysqli_query($conn, $sql);
     $output = "";
     if(mysqli_num_rows($query) == 0){

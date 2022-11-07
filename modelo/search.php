@@ -2,10 +2,10 @@
     session_start();
     include_once "config.php";
 
-    $outgoing_id = $_SESSION['unique_id'];
+    $emisor_id = $_SESSION['rut'];
     $searchTerm = mysqli_real_escape_string($conn, $_POST['searchTerm']);
 
-    $sql = "SELECT * FROM users WHERE NOT unique_id = {$outgoing_id} AND (fname LIKE '%{$searchTerm}%' OR lname LIKE '%{$searchTerm}%') ";
+    $sql = "SELECT * FROM usuario WHERE NOT rut = {$emisor_id} AND (nombre LIKE '%{$searchTerm}%' OR apellido LIKE '%{$searchTerm}%') ";
     $output = "";
     $query = mysqli_query($conn, $sql);
     if(mysqli_num_rows($query) > 0){

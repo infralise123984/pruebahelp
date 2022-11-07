@@ -12,6 +12,12 @@ if(!empty($_POST["btniniciar"])){
         $_SESSION["nombre"]=$datos->nombre;
         $_SESSION["apellido"]=$datos->apellido;
         $_SESSION["idtrabajo"]=$datos->desc_trabajo;
+        $rut=$_SESSION["rut"];
+        $sql2=$conexion->query("UPDATE usuario SET estado = 'Activo' WHERE rut = '$rut'");
+        if($sql2>0){
+            header("location: index.php");
+
+        }
         
         
      
