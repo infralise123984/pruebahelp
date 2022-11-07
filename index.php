@@ -50,7 +50,7 @@ if(empty($_SESSION)){
         </div>
     </header>
     <main class="container m-lg-auto justify-content-between    ">       
-            <!-- barra lateral izquierda -->
+            <!-- barraa lateral izquierda -->
             <div class="col barra-lateral-izquierda m-lg-auto justify-content-between">
                 <nav>
                     <!-- aqui están los botones -->
