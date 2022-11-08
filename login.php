@@ -39,7 +39,8 @@
                     </div>
                     <div class="mb-4">
                         <label for="password" class="form-label">Contraseña</label>
-                        <input type="password" class="form-control" name="password"> 
+                        <input type="password" class="form-control" name="password" id="pswrd"> 
+                        <input type="checkbox" onclick="toggleVisibility()"/>mostrar Contraseña
                     </div>
 
                     <div class="d-grid">
@@ -64,5 +65,6 @@
    <script src="js/jquery-3.6.1.min.js"></script>
    <script src="js/menu.js"></script>
    <script src="js/bootstrap.min.js"></script>
+   <script src="js/pass-show-hide.js"></script>
 </body>
 </html>

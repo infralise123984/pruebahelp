@@ -55,12 +55,13 @@
                     <div class="mb-4">
                         <!-- contraseña formulario oculta con formato . 8 caracteres minimo, una mayuscula y almenos un numero -->
                         <label for="password" class="form-label">Contraseña</label>
-                        <input type="password" class="form-control" name="password" placeholder="Ejemplo: Contrasena4" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Almenos 1 mayuscula, minimo 8 caracteres y un numero"> 
+                        <input type="password" class="form-control" name="password" placeholder="Ejemplo: Contrasena4" id="pswrd" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Almenos 1 mayuscula, minimo 8 caracteres y un numero"> 
                     </div>
                     <div class="mb-4">
                         <!-- confirmacion de contraseña funcional -->
                         <label for="password" class="form-label">Confirmar contraseña</label>
-                        <input type="password" class="form-control" name="password2" placeholder="Ejemplo: Contrasena4" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}">
+                        <input type="password" class="form-control" name="password2" placeholder="Ejemplo: Contrasena4" id="pswrd" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}">
+                        <input type="checkbox" onclick="toggleVisibility()"/>Mostrar Contraseña
                     </div>
                     <!-- boton para registrar -->
                     <div class="d-grid">
@@ -84,5 +85,6 @@
     <script src="js/jquery-3.6.1.min.js"></script>
     <script src="js/menu.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/pass-show-hide.js"></script>
  </body>
  </html>
