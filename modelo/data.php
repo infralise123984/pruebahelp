@@ -1,7 +1,7 @@
 <?php
     while($row = mysqli_fetch_assoc($query)){
-        $sql2 = "SELECT * FROM mensajes WHERE (receptor_id = {$row['rut']}
-                OR emisor_id = {$row['rut']}) AND (emisor_id = {$emisor_id} 
+        $sql2 = "SELECT * FROM mensajes WHERE (receptor_id = {$row['unique_id']}
+                OR emisor_id = {$row['unique_id']}) AND (emisor_id = {$emisor_id} 
                 OR receptor_id = {$emisor_id}) ORDER BY msg_id DESC LIMIT 1";
         $query2 = mysqli_query($conn, $sql2);
         $row2 = mysqli_fetch_assoc($query2);
@@ -13,9 +13,18 @@
             $you = "";
         }
         ($row['estado'] == "Desconectado ahora") ? $offline = "offline" : $offline = "";
-        ($emisor_id == $row['rut']) ? $hid_me = "hide" : $hid_me = "";
+        ($emisor_id == $row['unique_id']) ? $hid_me = "hide" : $hid_me = "";
+        $output .= '<a href="chat.php?user_id='. $row['unique_id'] .'">
+                    <div class="content">
+                    <div class="details">
+                        <span>'. $row['nombre']. " " . $row['apellido'] .'</span>
+                        <p>'. $you . $msg .'</p>
+                    </div>
+                    </div>
+                    <div class="status-dot '. $offline .'"> <i class="fas fa-circle"></i></div>
+                </a>';
         // Está es la version original del output
-        // $output .= '<a href="chat.php?user_id='. $row['rut'] .'">
+        // $output .= '<a href="chat.php?user_id='. $row['unique_id'] .'">
         //             <div class="content">
         //             <img src="../modelo/images/'. $row['img'] .'" alt="">
         //             <div class="details">
@@ -25,14 +34,5 @@
         //             </div>
         //             <div class="estado-dot '. $offline .'"><i class="fas fa-circle"></i></div>
         //         </a>';
-        $output .= '<a href="chat.php?user_id='. $row['rut'] .'">
-                    <div class="content">
-                    <div class="details">
-                        <span>'. $row['nombre']. " " . $row['apellido'] .'</span>
-                        <p>'. $you . $msg .'</p>
-                    </div>
-                    </div>
-                    <div class="estado-dot '. $offline .'"><i class="fas fa-circle"></i></div>
-                </a>';
     }
 ?>

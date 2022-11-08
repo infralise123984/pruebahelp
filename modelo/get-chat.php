@@ -1,11 +1,11 @@
 <?php 
     session_start();
-    if(isset($_SESSION['rut'])){
+    if(isset($_SESSION['unique_id'])){
         include_once "config.php";
-        $outgoing_id = $_SESSION['rut'];
+        $outgoing_id = $_SESSION['unique_id'];
         $incoming_id = mysqli_real_escape_string($conn, $_POST['incoming_id']);
         $output = "";
-        $sql = "SELECT * FROM mensajes LEFT JOIN usuario ON usuario.rut = mensajes.emisor_id
+        $sql = "SELECT * FROM mensajes LEFT JOIN usuario ON usuario.unique_id = mensajes.emisor_id
                 WHERE (emisor_id = {$outgoing_id} AND receptor_id = {$incoming_id})
                 OR (emisor_id = {$incoming_id} AND receptor_id = {$outgoing_id}) ORDER BY msg_id";
         $query = mysqli_query($conn, $sql);

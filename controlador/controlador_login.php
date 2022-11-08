@@ -9,11 +9,12 @@ if(!empty($_POST["btniniciar"])){
         $sql=$conexion->query("select * from usuario where mail='$mail' and contraseña='$contrasena' ");
        if ($datos=$sql->fetch_object()) {
         $_SESSION["rut"]=$datos->rut;
+        $_SESSION["unique_id"]=$datos->unique_id;
         $_SESSION["nombre"]=$datos->nombre;
         $_SESSION["apellido"]=$datos->apellido;
         $_SESSION["idtrabajo"]=$datos->desc_trabajo;
         $rut=$_SESSION["rut"];
-        $sql2=$conexion->query("UPDATE usuario SET estado = 'Activo' WHERE rut = '$rut'");
+        $sql2=$conexion->query("UPDATE usuario SET estado = 'Activo ahora' WHERE rut = '$rut'");
         if($sql2>0){
             header("location: index.php");
 

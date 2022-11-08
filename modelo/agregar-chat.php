@@ -2,7 +2,7 @@
     session_start();
     if(isset($_SESSION['rut'])){
         include_once "config.php";
-        $emisor_id = $_SESSION['rut'];
+        $emisor_id = $_SESSION['unique_id'];
         $receptor_id = mysqli_real_escape_string($conn, $_POST['incoming_id']);
         $message = mysqli_real_escape_string($conn, $_POST['message']);
         if(!empty($message)){
