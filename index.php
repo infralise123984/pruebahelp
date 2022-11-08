@@ -60,7 +60,7 @@ if(empty($_SESSION)){
                     <a href="InteriorBotones/pgperfil.php" target="contenido"><i class="icon-user"></i> Perfil</a>
                     <a href="vistas/usuarios.php" target="contenido"><i class="icon-chat"></i>Chat</a>
                     <a href="#"><i class="icon-cog"></i> Opciones</a>
-                    <a href="controlador/controlador_cerrar_sesion.php"><i class="icon-cog"></i>Cerrar sesion</a>
+                    <a href="controlador/controlador_cerrar_sesion.php"><i class="icon-menu"></i>Cerrar sesion</a>
                 </nav>
             </div>
             

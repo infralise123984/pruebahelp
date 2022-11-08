@@ -25,11 +25,12 @@ if(empty($_SESSION)){
                             <div class="row ">
                                 <div class="col m-lg-auto justify-content-between">
                                     <h2 class="card-title">Bienvenido</h2>
-                                    <p class="card-text "><strong>Nombre: </strong> <?php echo $_SESSION["nombre"]?> </p>
+                                    <p class="card-text "><strong>Nombre: </strong> <?php echo $_SESSION["nombre"];?> </p>
+                                    <p class="card-text "><strong>Apellido: </strong> <?php echo $_SESSION["apellido"]?> </p>
                                     <p class="card-text "><strong>Rut: </strong> <?php echo $_SESSION["rut"]?> </p>
                                     <p class="card-text "><strong>Area de trabajo: </strong> <?php echo $_SESSION["idtrabajo"] ?> </p>
                                     <p><strong>Redes Sociales: </strong>
-                                        <span class="badge bg-dark">Instagram</span> 
+                                        <span class="badge bg-danger">Instagram</span> 
                                         <span class="badge bg-primary">Facebook</span>
                                         <span class="badge bg-success">WhatsApp</span>
                                         <span class="badge bg-info">Telegram</span>
@@ -60,8 +61,7 @@ if(empty($_SESSION)){
     </main>
     
 
-   <script src="js/jquery-3.6.1.min.js"></script>
-   <script src="js/menu.js"></script>
-   <script src="js/bootstrap.min.js"></script>
+   <script src="../js/jquery-3.6.1.min.js"></script>
+   <script src="../js/bootstrap.min.js"></script>
 </body>
 </html>
