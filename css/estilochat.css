@@ -15,7 +15,7 @@ body{
   padding: 0 10px;
 }
 .wrapper{
-  background: rgb(255, 255, 255);
+  background: rgb(146, 34, 34);
   max-width: 450px;
   width: 100%;
   border-radius: 16px;
@@ -23,7 +23,6 @@ body{
               0 32px 64px -48px rgba(0,0,0,0.5);
 }
 
-/* Login & Signup Form CSS Start */
 
 /* Users List CSS Start */
 .users{
@@ -119,7 +118,7 @@ body{
   content: '\f00d';
 }
 .users-list{
-  max-height: 350px;
+  max-height: 50px;
   overflow-y: auto;
 }
 :is(.users-list, .chat-box)::-webkit-scrollbar{
