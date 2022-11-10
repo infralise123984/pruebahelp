@@ -12,7 +12,6 @@ if(empty($_SESSION)){
       <header>
         <div class="content">
           <?php
-          echo $_SESSION["rut"];
           $rut=$_SESSION["rut"];
           $consulta = "SELECT * FROM usuario WHERE rut = '$rut' ";
 
@@ -21,7 +20,7 @@ if(empty($_SESSION)){
               $row = mysqli_fetch_assoc($sql);
             }
           ?>
-          <!-- <img src="../modelo/images/<?php echo $row['img']; ?>" alt=""> -->
+          <img src="../img/<?php echo $row['img_perfil']; ?>" alt="">
           <div class="details">
             <span><?php echo $row['nombre']. " " . $row['apellido'] ?></span>
             <p><?php echo $row['estado']; ?></p>

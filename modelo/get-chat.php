@@ -26,7 +26,7 @@
                     //             </div>
                     //             </div>';
                     $output .= '<div class="chat incoming">
-                                <h3>'.$row['nombre'].''.$row['apellido'].'</h3>
+                                <img src="../img/'. $row['img_perfil'] .'" alt="">
                                 <div class="details">
                                     <p>'. $row['mensaje'] .'</p>
                                 </div>

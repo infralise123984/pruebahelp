@@ -21,6 +21,11 @@ if(empty($_SESSION)){
             <!-- contenido principal -->
             <div class="mx-auto d-flex m-lg-auto justify-content-between"> 
             <div class="card m-lg-auto justify-content-between">
+            <?php 
+                    include "../modelo/conexion.php";
+                    include "../controlador/controlador_fotos.php";
+                    include "../controlador/controlador_obtener_pfp.php";
+                ?>
                         <div class="card-block">
                             <div class="row ">
                                 <div class="col m-lg-auto justify-content-between">
@@ -39,7 +44,7 @@ if(empty($_SESSION)){
                                     </div>
                                     <!-- DIV seccion imagen de perfil COL -->
                                     <div class="col text-center m-lg-auto justify-content-between ">
-                                    <img class="imagenperfil m-lg-auto justify-content-between" src="../img/perfil.png" >   
+                                    <img class="imagenperfil m-lg-auto justify-content-between" src="../img/<?=$imagen?>" >   
                                     <!-- DIV finalizador de imagen perfil -->
                                     </div>
                             <!-- DIV finalizadord ROW -->
