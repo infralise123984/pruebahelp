@@ -6,7 +6,11 @@ if(!empty($_POST["btniniciar"])){
         $contrasena=$_POST["password"];
     //    $sql=$conexion->query("SELECT rut,nombre,apellido,mail,contraseña,Publicacion_id,trabajos.desc_trabajo FROM usuario INNER JOIN trabajos ON  trabajos.id =usuario.trabajo_id where mail='$mail' and contraseña='$contrasena'");
     //    $sql2=$conexion->query("SELECT trabajos.desc_trabajo  FROM usuario INNER JOIN trabajos ON  trabajos.id =usuario.trabajo_id ");
-        $sql=$conexion->query("select * from usuario where mail='$mail' and contraseña='$contrasena' ");
+        //$sql=$conexion->query("select * from usuario where mail='$mail' and contraseña='$contrasena' ");
+        $sql=$conexion->query("SELECT *
+        FROM usuario 
+        INNER JOIN trabajos ON trabajos.id =usuario.trabajo_id 
+        where mail='$mail' and contraseña='$contrasena'");
        if ($datos=$sql->fetch_object()) {
         $_SESSION["rut"]=$datos->rut;
         $_SESSION["unique_id"]=$datos->unique_id;
@@ -17,13 +21,7 @@ if(!empty($_POST["btniniciar"])){
         $sql2=$conexion->query("UPDATE usuario SET estado = 'Activo ahora' WHERE rut = '$rut'");
         if($sql2>0){
             header("location: index.php");
-
         }
-        
-        
-     
-        
-        
         header("location: index.php");
         
        } else {

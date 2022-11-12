@@ -19,16 +19,16 @@ if(empty($_SESSION)){
 </head>
 <body>
             <!-- contenido principal -->
-            <div class="mx-auto d-flex m-lg-auto justify-content-between"> 
-            <div class="card m-lg-auto justify-content-between">
+            <div class="mx-auto d-flex d-flex justify-content-between"> 
+            <div class="card d-flex justify-content-between">
             <?php 
                     include "../modelo/conexion.php";
                     include "../controlador/controlador_fotos.php";
                     include "../controlador/controlador_obtener_pfp.php";
                 ?>
                         <div class="card-block">
-                            <div class="row ">
-                                <div class="col m-lg-auto justify-content-between">
+                            <div class="row d-flex justify-content-between">
+                                <div class="col justify-content-between">
                                     <h2 class="card-title">Bienvenido</h2>
                                     <p class="card-text "><strong>Nombre: </strong> <?php echo $_SESSION["nombre"];?> </p>
                                     <p class="card-text "><strong>Apellido: </strong> <?php echo $_SESSION["apellido"]?> </p>
@@ -43,7 +43,7 @@ if(empty($_SESSION)){
                                     <!-- DIV finalizador del COL -->
                                     </div>
                                     <!-- DIV seccion imagen de perfil COL -->
-                                    <div class="col text-center m-lg-auto justify-content-between ">
+                                    <div class="col text-center d-flex justify-content-between">
                                     <img class="imagenperfil m-lg-auto justify-content-between" src="../img/<?=$imagen?>" >   
                                     <!-- DIV finalizador de imagen perfil -->
                                     </div>

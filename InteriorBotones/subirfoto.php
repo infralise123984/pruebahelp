@@ -29,25 +29,13 @@ if(empty($_SESSION)){
 
                 <input type="file" name="my_image">
 
-                <input type="submit" name="subirfoto" value="Upload">
+                <!-- <input type="submit" name="subirfoto" value="Upload"> -->
+                <input name="subirfoto" class="btn btn-primary" type="submit" value="Upload">
             
-                </form>
-                
-
-
-             
-           
-          		
- 
-
-                
+                </form>              
             <!-- div cerrador del contenido principal -->
             </div> 
-            
-                
     </main>
-    
-
    <script src="js/jquery-3.6.1.min.js"></script>
    <script src="js/menu.js"></script>
    <script src="js/bootstrap.min.js"></script>

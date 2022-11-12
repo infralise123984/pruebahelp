@@ -51,7 +51,7 @@ if(empty($_SESSION)){
     </header>
     <main class="container m-lg-auto justify-content-between    ">       
             <!-- barraa lateral izquierda -->
-            <div class="col barra-lateral-izquierda m-lg-auto justify-content-between">
+            <div class="col barra-lateral-izquierda d-flex justify-content-between">
                 <nav>
                     <!-- aqui están los botones -->
                    <!-- <a href="#"><i class="icon-search"></i> Buscar empleo</a> 
@@ -66,7 +66,7 @@ if(empty($_SESSION)){
             </div>
             
             <!-- barra lateral derecha -->
-            <div class="col-1 barra-lateral-derecha m-lg-auto justify-content-between">
+            <div class="col-1 barra-lateral-derecha d-flex justify-content-between">
                 Contenido barra lateral derecha WIP
             </div>
             <!-- publicacion -->
