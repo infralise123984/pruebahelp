@@ -11,9 +11,9 @@ if(empty($_SESSION)){
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,700&family=Roboto&display=swap" rel="stylesheet">
-    <!-- <link rel="stylesheet" href="../css/fontello.css">
+    <link rel="stylesheet" href="../css/fontello.css">
     <link rel="stylesheet" href="../css/bootstrap.min.css">
-    <link rel="stylesheet" href="../css/estilos.css"> -->
+    <link rel="stylesheet" href="../css/estilos.css">
     <link rel="shortcut icon" href="../img/logo.png">
     <title>iHelp</title>
 </head>
@@ -21,21 +21,16 @@ if(empty($_SESSION)){
             <!-- contenido principal -->
             <div class="mx-auto d-flex m-lg-auto justify-content-between"> 
             
-            <?php   
-                    include "../modelo/conexion.php";
+            <?php include "../modelo/conexion.php";?>
+            <div class="col ">
+                <nav class="publicaciones nav">
+            <?php include "../controlador/controlador_obtener_publicaciones.php";?>
+                </nav>
+            </div>
+            
                     
-                    
-                    ?>
 
-                    <table border="2px">
-                        <tr>
-                            <th>id</th>
-                            <th>titulo</th>
-                            <th>info</th>
-                        </tr>
-                        
-                        <?php include "../controlador/controlador_obtener_publicaciones.php";?>
-                    </table>
+                    
             <!-- div cerrador del contenido principal -->
             </div> 
             

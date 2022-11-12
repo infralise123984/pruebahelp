@@ -1,5 +1,9 @@
 body{
-    background: linear-gradient(to right, rgb(255, 216, 132),rgb(255, 211, 115) );
+    background: linear-gradient(to right, rgba(255, 202, 132, 0.849),rgb(255, 211, 115) );
+    -webkit-animation: animado 13s ease infinite;
+    -moz-animation: animado 13s ease infinite;
+    -o-animation: animado 13s ease infinite;
+    animation: animado 13s ease infinite;
 }.bg{
     background-image: url(img/dos.png);
     background-position: center center;
@@ -234,16 +238,58 @@ input:checked + .slider {
 
 /*--- CSS carta*/
 .card{
-    background: rgba(128, 121, 121, 0);
+    background: rgba(0, 0, 0, 0);
     border-radius: 2.5vh;
     box-shadow: 2px;
+   
+    
              
 }
 
 .card-block{
     background: linear-gradient(to right, rgb(247, 233, 203),rgb(236, 236, 236) );
     border-radius: 2.5vh;
+    -webkit-animation: animado 13s ease infinite;
+    -moz-animation: animado 13s ease infinite;
+    -o-animation: animado 13s ease infinite;
+    animation: animado 13s ease infinite;
+    
 
              
     
+}
+
+
+main .publicaciones{
+    float: center;
+    padding-bottom: 0;
+    padding-left: 0;
+    width: 23vh;
+}
+
+main .publicaciones nav{
+    border-bottom: 1px solid #6fad0b;
+    
+}
+
+/* animacion de fondo  */
+@-webkit-keyframes animado {
+    0%{background-position:94% 0%}
+    50%{background-position:7% 100%}
+    100%{background-position:94% 0%}
+}
+@-moz-keyframes animado {
+    0%{background-position:94% 0%}
+    50%{background-position:7% 100%}
+    100%{background-position:94% 0%}
+}
+@-o-keyframes animado {
+    0%{background-position:94% 0%}
+    50%{background-position:7% 100%}
+    100%{background-position:94% 0%}
+}
+@keyframes animado {
+    0%{background-position:94% 0%}
+    50%{background-position:7% 100%}
+    100%{background-position:94% 0%}
 }
