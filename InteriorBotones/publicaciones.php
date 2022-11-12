@@ -1,21 +1,50 @@
 <?php
-    $conexion=mysqli_connect('localhost','root',''.'loginprueba');
+session_start();
+if(empty($_SESSION)){
+    header("location: login.php");
+}
 ?>
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+    <meta charset="UFT-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,700&family=Roboto&display=swap" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="../css/fontello.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/estilos.css"> -->
+    <link rel="shortcut icon" href="../img/logo.png">
+    <title>iHelp</title>
 </head>
 <body>
-<?php
-$sql="SELECT * from usuarios";
+            <!-- contenido principal -->
+            <div class="mx-auto d-flex m-lg-auto justify-content-between"> 
+            
+            <?php   
+                    include "../modelo/conexion.php";
+                    
+                    
+                    ?>
 
-?>
+                    <table border="2px">
+                        <tr>
+                            <th>id</th>
+                            <th>titulo</th>
+                            <th>info</th>
+                        </tr>
+                        
+                        <?php include "../controlador/controlador_obtener_publicaciones.php";?>
+                    </table>
+            <!-- div cerrador del contenido principal -->
+            </div> 
+            
+                
+    </main>
     
+
+   <script src="js/jquery-3.6.1.min.js"></script>
+   <script src="js/menu.js"></script>
+   <script src="js/bootstrap.min.js"></script>
 </body>
 </html>
