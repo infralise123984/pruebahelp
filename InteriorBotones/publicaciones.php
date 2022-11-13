@@ -17,27 +17,46 @@ if(empty($_SESSION)){
     <link rel="shortcut icon" href="../img/logo.png">
     <title>iHelp</title>
 </head>
-<body>
+<body style=" background: #ffffff00;">
+    <header  style=" border-radius: 2vh; position: fixed; z-index: 100; width: 80vh; height: 7vh;">
+        <div class="container">
+            <div class="col-12 buscar ">
+                <!-- formulario de barra de busqueda -->
+                <form action="">
+                    <div class="row g-2 g-0">
+                        <div class="col-10">
+                            <input type="text" name="" id="" placeholder="Buscar">
+                                </div>
+                                <div class="col-2">
+                            <input name="btnbuscarpubli" class="btn btn-primary" style="font-size: 1.8vh; padding: 0 1.5vh;height: 3.7vh; line-height: 1.5vh;" type="submit" value="buscar">
+                        </div>
+                    </div>
+                </form>         
+            </div>
+        </div>
+    </header>
+
+<main class="container m-lg-auto justify-content-between">
+    <form action="" method=post>
+<?php
+        if(!empty($_POST["btncrear"])){
+            header("location: crear_publicacion.php");
+            echo 'apretaste el botn watone fea edionda';
+        }
+    ?>
+    
+    <input name="btncrear" class="float" type="submit" value="crear publicacion">
+    </form>
+   
             <!-- contenido principal -->
             <div class="mx-auto d-flex m-lg-auto justify-content-between"> 
-            
-            <?php include "../modelo/conexion.php";?>
-            <div class="col ">
-                <nav class="publicaciones nav">
-            <?php include "../controlador/controlador_obtener_publicaciones.php";?>
-                </nav>
-            </div>
-            
-                    
-
-                    
-            <!-- div cerrador del contenido principal -->
-            </div> 
-            
-                
+                <?php include "../modelo/conexion.php";?>
+                <div class="col ">                   
+                <?php include "../controlador/controlador_obtener_publicaciones.php";?>               
+                </div>        
+                <!-- div cerrador del contenido principal -->
+                </div>      
     </main>
-    
-
    <script src="js/jquery-3.6.1.min.js"></script>
    <script src="js/menu.js"></script>
    <script src="js/bootstrap.min.js"></script>

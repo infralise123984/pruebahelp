@@ -17,7 +17,8 @@ if(empty($_SESSION)){
     <link rel="shortcut icon" href="../img/logo.png">
     <title>iHelp</title>
 </head>
-<body>
+<body style=" background: #ffffff00;">
+    <main class="container m-lg-auto justify-content-between"> 
             <!-- contenido principal -->    
             <div class="mx-auto d-flex m-lg-auto justify-content-between"> 
                 <form action="" method="post" enctype="multipart/form-data">

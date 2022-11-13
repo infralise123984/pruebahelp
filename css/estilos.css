@@ -21,6 +21,7 @@ header {
     width: auto;
 }
 
+
 header .logo img {
     height: 4.5vh;
 }
@@ -233,6 +234,16 @@ input:checked + .slider {
     border-radius: 50%;
     box-shadow: 0 0 28px 0 rgba(0,0,0,0.5);
 }
+.publicacionesfoto {
+    top: 0;
+    left: 0;
+    width: 15vh;
+    height: 15vh;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 80%;
+    box-shadow: 0 0 28px 0 rgba(0,0,0,0.5);
+}
 
 
 
@@ -270,6 +281,27 @@ main .publicaciones{
 main .publicaciones nav{
     border-bottom: 1px solid #6fad0b;
     
+}
+
+
+iframe{
+    width:100vh; 
+    height:80vh; 
+    /* border: 1px solid black; */
+    overflow: hidden;
+}
+
+.float{
+	position:fixed;
+	
+	bottom:40px;
+	right:40px;
+	text-align:center;
+    z-index: 100;
+}
+
+.my-float{
+	margin-top:22px;
 }
 
 /* animacion de fondo  */

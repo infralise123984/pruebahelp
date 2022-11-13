@@ -24,19 +24,7 @@ if(empty($_SESSION)){
                 <div class="col-auto d-none d-md-block logo">
                 <a href="index.php"><img src="img/logo.png" alt=""></a>
                 </div>
-                <div class="col-12 col-sm-8 col-lg-6 buscar mb-2 mb-sm-0">
-                    <!-- formulario de barra de busqueda -->
-                    <form action="">
-                        <div class="row g-2 g-0">
-                            <div class="col-10">
-                                <input type="text" name="" id="" placeholder="Buscar">
-                            </div>
-                            <div class="col-2">
-                                <button><i class="icon-search"></i></button>
-                            </div>
-                        </div>
-                    </form>
-                </div>
+                
                 <!-- barra de navegacion de iconos -->
                 <!-- barra de navegacion de iconos -->
                 <nav class="col-12 col-sm-3 col-lg-2 menu d-flex justify-content-between ml-auto mb-2 mb-sm-0">
@@ -56,7 +44,7 @@ if(empty($_SESSION)){
                     <!-- aqui están los botones -->
                    <!-- <a href="#"><i class="icon-search"></i> Buscar empleo</a> 
                     <a href="#"><i class="icon-handshake-o"></i> Ofrecer empleo</a> -->
-                    <a href="InteriorBotones/contenidomain.php" target="contenido"><i class="icon-file-image"></i> Publicaciones</a>
+                    <a href="InteriorBotones/publicaciones.php" target="contenido"><i class="icon-file-image"></i> Publicaciones</a>
                     <a href="InteriorBotones/pgperfil.php" target="contenido"><i class="icon-user"></i> Perfil</a>
                     <a href="vistas/usuarios.php" target="contenido"><i class="icon-chat"></i>Chat</a>
                     <a href="InteriorBotones/subirfoto.php"  target="contenido"><i class="icon-cog"></i> Opciones</a>
@@ -76,9 +64,9 @@ if(empty($_SESSION)){
             <!-- contenido principal -->
             <div class="mx-auto d-flex justify-content-between"> 
                <!-- <iframe src="pgperfil.php" frameborder="0" style="overflow: hidden; border:none; height:900vhx;width:300vh;"></iframe> -->
-               <iframeset class="barra-lateral-derecha d-flex m-lg-auto justify-content-between">
-                    <iframe src="" width="600vh" height="500vh" name="contenido" scrolling="No" id="contenido" title="contenido" ></iframe>
-               </iframeset>
+
+                    <iframe class="mx-auto" src="" style="" name="contenido" id="contenido" title="contenido" ></iframe>
+               
             <!-- div cerrador del contenido principal -->
             </div>                     
     </main>
