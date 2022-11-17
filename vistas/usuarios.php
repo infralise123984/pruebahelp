@@ -26,7 +26,7 @@ if(empty($_SESSION)){
             <p><?php echo $row['estado']; ?></p>
           </div>
         </div>
-        <!-- <a href="../modelo/logout.php?logout_id=<?php echo $row['unique_id']; ?>" class="logout">Cerrar sesión</a> -->
+       
       </header>
       <div class="search">
         <span class="text">Seleccione un usuario para iniciar el chat</span>

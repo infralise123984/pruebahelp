@@ -36,7 +36,8 @@ if(empty($_SESSION)){
         </div>
     </header>
 
-<main class="container m-lg-auto justify-content-between">
+<main class="container m-lg-auto justify-content-between" style="padding-top: 10%;
+  margin-top: 10px;">
     <form action="" method=post>
 <?php
         if(!empty($_POST["btncrear"])){
@@ -51,7 +52,7 @@ if(empty($_SESSION)){
             <!-- contenido principal -->
             <div class="mx-auto d-flex m-lg-auto justify-content-between"> 
                 <?php include "../modelo/conexion.php";?>
-                <div class="col ">                   
+                <div class="col publicacion" style="">                   
                 <?php include "../controlador/controlador_obtener_publicaciones.php";?>               
                 </div>        
                 <!-- div cerrador del contenido principal -->

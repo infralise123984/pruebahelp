@@ -16,6 +16,7 @@ if(mysqli_num_rows($sql) == 0){
     
         // </tr>';
         $output.='
+        <a href="ver_publicacion.php?id='. $row['id'] .'" >
         <div class="card">
                     <div class="card-block">
                         <div class="row mx-auto">
@@ -30,10 +31,10 @@ if(mysqli_num_rows($sql) == 0){
                                 <p>'. $row['info'] .'</p>                    
                             </div>
                             <div class="col d-flex text-center">
-                            <img class="imagenperfil m-lg-auto justify-content-between" style="width: 15vh; height: 15vh; border-radius: 50%;" src="../img/'. $row['imagen'] .'" > 
+                            <img class="publicacionesfoto m-lg-auto justify-content-between" style="" src="../img/'. $row['imagen'] .'" > 
                             </div>
                     </div>                       
-                </div>                <br>';
+                </div>  </a>               <br>';
 
         
 

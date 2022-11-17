@@ -1,9 +1,5 @@
 body{
-    background: linear-gradient(to right, rgba(255, 202, 132, 0.849),rgb(255, 211, 115) );
-    -webkit-animation: animado 13s ease infinite;
-    -moz-animation: animado 13s ease infinite;
-    -o-animation: animado 13s ease infinite;
-    animation: animado 13s ease infinite;
+    background: linear-gradient(to right, rgba(253, 187, 88, 0.849),rgb(255, 211, 115) );
 }.bg{
     background-image: url(img/dos.png);
     background-position: center center;
@@ -16,9 +12,11 @@ a:hover { text-decoration: underline; }
 /*HEADER*/
 
 header {
+    
     background: #474747;
     padding: 1vh 0;
     width: auto;
+    
 }
 
 
@@ -232,17 +230,27 @@ input:checked + .slider {
     object-fit: cover;
     object-position: center;
     border-radius: 50%;
-    box-shadow: 0 0 28px 0 rgba(0,0,0,0.5);
+    box-shadow: 0 0 18px 0 rgba(0,0,0,0.5);
 }
 .publicacionesfoto {
     top: 0;
     left: 0;
-    width: 15vh;
-    height: 15vh;
+    width: 25vh;
+    height: 25vh;
     object-fit: cover;
     object-position: center;
     border-radius: 80%;
-    box-shadow: 0 0 28px 0 rgba(0,0,0,0.5);
+    box-shadow: 0 0 18px 0 rgba(0,0,0,0.5);
+}
+.publicacionesfotogrande {
+    top: 0;
+    left: 0;
+    width: 45vh;
+    height: 45vh;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 5%;
+    box-shadow: 0 0 18px 0 rgba(0,0,0,0.5);
 }
 
 
@@ -258,16 +266,9 @@ input:checked + .slider {
 }
 
 .card-block{
-    background: linear-gradient(to right, rgb(247, 233, 203),rgb(236, 236, 236) );
+    background: linear-gradient(to right, rgb(248, 253, 255),rgb(255, 244, 244) );
     border-radius: 2.5vh;
-    -webkit-animation: animado 13s ease infinite;
-    -moz-animation: animado 13s ease infinite;
-    -o-animation: animado 13s ease infinite;
-    animation: animado 13s ease infinite;
-    
-
-             
-    
+  
 }
 
 
@@ -286,7 +287,7 @@ main .publicaciones nav{
 
 iframe{
     width:100vh; 
-    height:80vh; 
+    height:100vh; 
     /* border: 1px solid black; */
     overflow: hidden;
 }
@@ -304,24 +305,14 @@ iframe{
 	margin-top:22px;
 }
 
-/* animacion de fondo  */
-@-webkit-keyframes animado {
-    0%{background-position:94% 0%}
-    50%{background-position:7% 100%}
-    100%{background-position:94% 0%}
+.publicacion a{
+    color: #000000;
+    text-decoration: none;
 }
-@-moz-keyframes animado {
-    0%{background-position:94% 0%}
-    50%{background-position:7% 100%}
-    100%{background-position:94% 0%}
+
+.publicacion a:hover {
+    color:#000000; 
+    text-decoration:none; 
+    cursor:pointer;  
 }
-@-o-keyframes animado {
-    0%{background-position:94% 0%}
-    50%{background-position:7% 100%}
-    100%{background-position:94% 0%}
-}
-@keyframes animado {
-    0%{background-position:94% 0%}
-    50%{background-position:7% 100%}
-    100%{background-position:94% 0%}
-}
+

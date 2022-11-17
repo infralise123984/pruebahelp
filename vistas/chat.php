@@ -21,7 +21,7 @@
         ?>
         <a href="usuarios.php" class="back-icon"><i class="fas fa-arrow-left"></i></a>
         <!-- está es la parte donde se muestra la foto de perfil del chat -->
-        <!-- <img src="../modelo/images/<?php //echo $row['img']; ?>" alt=""> -->
+        <img src="../img/<?php echo $row['img_perfil']; ?>" alt="">
         <div class="details">
           <span><?php echo $row['nombre']. " " . $row['apellido'] ?></span>
           <p><?php echo $row['estado']; ?></p>

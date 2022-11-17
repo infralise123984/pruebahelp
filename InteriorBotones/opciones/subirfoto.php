@@ -11,10 +11,10 @@ if(empty($_SESSION)){
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,700&family=Roboto&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../css/fontello.css">
-    <link rel="stylesheet" href="../css/bootstrap.min.css">
-    <link rel="stylesheet" href="../css/estilos.css">
-    <link rel="shortcut icon" href="../img/logo.png">
+    <link rel="stylesheet" href="../../css/fontello.css">
+    <link rel="stylesheet" href="../../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../css/estilos.css">
+    <link rel="shortcut icon" href="../../img/logo.png">
     <title>iHelp</title>
 </head>
 <body style=" background: #ffffff00;">
@@ -22,10 +22,11 @@ if(empty($_SESSION)){
             <!-- contenido principal -->    
             <div class="mx-auto d-flex m-lg-auto justify-content-between"> 
                 <form action="" method="post" enctype="multipart/form-data">
+                <h1>Cambiar foto de perfil</h1> 
                 <?php 
-                    include "../modelo/conexion.php";
-                    include "../controlador/controlador_fotos.php";
-                    include "../controlador/controlador_obtener_pfp.php";
+                    include "../../modelo/conexion.php";
+                    include "../../controlador/controlador_fotos.php";
+                    include "../../controlador/controlador_obtener_pfp.php";
                 ?>
 
                 <input type="file" name="my_image">
