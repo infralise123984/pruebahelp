@@ -1,9 +1,9 @@
 <?php 
 
 if (isset($_POST['subirfoto']) && isset($_FILES['my_image'])) {
-	echo "<pre>";
-	print_r($_FILES['my_image']);
-	echo "</pre>";
+	// echo "<pre>";
+	// print_r($_FILES['my_image']);
+	// echo "</pre>";
 	$img_name = $_FILES['my_image']['name'];
 	$img_size = $_FILES['my_image']['size'];
 	$tmp_name = $_FILES['my_image']['tmp_name'];
@@ -12,10 +12,11 @@ if (isset($_POST['subirfoto']) && isset($_FILES['my_image'])) {
 			$allowed_exs = array("jpg", "jpeg", "png", "gif"); 
 			if (in_array($img_ex_lc, $allowed_exs)) {
 				$new_img_name = uniqid("IMG-", true).'.'.$img_ex_lc;
-				$img_upload_path = '../img/'.$new_img_name;
+				$img_upload_path = '../../img/'.$new_img_name;
 				move_uploaded_file($tmp_name, $img_upload_path);
 				$sql="UPDATE usuario SET img_perfil = '$new_img_name' WHERE rut='$_SESSION[rut]'";
 				mysqli_query($conexion, $sql);
+				echo '<script language="javascript">alert("Foto cambiada con exito");</script>';
 		}
 		else{
 			echo '<script language="javascript">alert("porfavor elegir un archivo");</script>';
