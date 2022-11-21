@@ -30,8 +30,8 @@ if(mysqli_num_rows($sql) == 0){
                             <div class="col text-center ">
                                 <p>'. $row['info'] .'</p>                    
                             </div>
-                            <div class="col d-flex text-center">
-                            <img class="publicacionesfoto m-lg-auto justify-content-between" style="" src="../img/'. $row['imagen'] .'" > 
+                            <div class="col d-flex justify-content-center">
+                            <img class="publicacionesfoto m-lg justify-content-between" style="" src="../img/'. $row['imagen'] .'" > 
                             </div>
                     </div>                       
                 </div>  </a>               <br>';

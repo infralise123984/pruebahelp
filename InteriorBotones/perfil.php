@@ -19,27 +19,19 @@ if(empty($_SESSION)){
 </head>
 <body style=" background: #ffffff00;">
     <main class="container m-lg-auto justify-content-between"> 
-            <!-- contenido principal -->  
-            <form action="" method="post">
-            <input name="btnvolver" class="btn btn-primary" type="submit" value="volver"> 
-            <?php if(!empty($_POST['btnvolver'])){
-                header("location: publicaciones.php");
-            } ?>
-            </form>
-            <div class="mx-auto d-flex m-lg-auto justify-content-between">
-                
-                <?php  
-                    include "../controlador/controlador_ver_publicaciones.php";   
-                    ?>
-                  
-       
-            
-            
-            <!-- div cerrador del contenido principal -->
+            <!-- contenido principal -->
+            <div class="mx-auto d-flex d-flex justify-content-between">
+                <div class="card d-flex justify-content-between">
+                <div class="card d-flex justify-content-between">
+                <?php
+                 include "../controlador/controlador_generador_perfil.php";   
+                ?>
             </div> 
+            </div>              
     </main>
-   <script src="js/jquery-3.6.1.min.js"></script>
-   <script src="js/menu.js"></script>
-   <script src="js/bootstrap.min.js"></script>
+    
+
+   <script src="../js/jquery-3.6.1.min.js"></script>
+   <script src="../js/bootstrap.min.js"></script>
 </body>
 </html>

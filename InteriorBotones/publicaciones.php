@@ -27,7 +27,7 @@ if(empty($_SESSION)){
                         <div class="col-10">
                             <input type="text" name="" id="" placeholder="Buscar">
                                 </div>
-                                <div class="col-2">
+                            <div class="col-2">
                             <input name="btnbuscarpubli" class="btn btn-primary" style="font-size: 1.8vh; padding: 0 1.5vh;height: 3.7vh; line-height: 1.5vh;" type="submit" value="buscar">
                         </div>
                     </div>
@@ -42,7 +42,7 @@ if(empty($_SESSION)){
 <?php
         if(!empty($_POST["btncrear"])){
             header("location: crear_publicacion.php");
-            echo 'apretaste el botn watone fea edionda';
+            
         }
     ?>
     

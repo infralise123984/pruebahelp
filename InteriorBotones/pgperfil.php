@@ -24,7 +24,7 @@ if(empty($_SESSION)){
             <div class="card d-flex justify-content-between">
             <?php 
                     include "../modelo/conexion.php";
-                    include "../controlador/controlador_fotos.php";
+                    
                     include "../controlador/controlador_obtener_pfp.php";
                 ?>
                         <div class="card-block">
