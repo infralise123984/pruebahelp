@@ -36,10 +36,10 @@ if(empty($_SESSION)){
                                     <p class="card-text "><strong>Rut: </strong> <?php echo $_SESSION["rut"]?> </p>
                                     <p class="card-text "><strong>Area de trabajo: </strong> <?php echo $_SESSION["idtrabajo"] ?> </p>
                                     <p><strong>Redes Sociales: </strong>
-                                        <span class="badge bg-danger">Instagram</span> 
-                                        <span class="badge bg-primary">Facebook</span>
-                                        <span class="badge bg-success">WhatsApp</span>
-                                        <span class="badge bg-info">Telegram</span>
+                                        <a href="<?php echo $_SESSION["ig"]?>" target="_blank"><span class="badge bg-danger">Instagram</span> </a>
+                                        <a href="<?php echo $_SESSION["fb"]?>" target="_blank"><span class="badge bg-primary">Facebook</span></a>
+                                        <a href="https://web.whatsapp.com/send?phone=<?php echo $_SESSION["ws"]?>" target="_blank"><span class="badge bg-success">WhatsApp</span></a>
+                                        <a href="<?php echo $_SESSION["tg"]?>" target="_blank"><span class="badge bg-info">Telegram</span></a>
                                     </p>
                                     <!-- DIV finalizador del COL -->
                                     </div>

@@ -17,6 +17,10 @@ if(!empty($_POST["btniniciar"])){
         $_SESSION["nombre"]=$datos->nombre;
         $_SESSION["apellido"]=$datos->apellido;
         $_SESSION["idtrabajo"]=$datos->desc_trabajo;
+        $_SESSION["ig"]=$datos->ig;
+        $_SESSION["fb"]=$datos->fb;
+        $_SESSION["ws"]=$datos->ws;
+        $_SESSION["tg"]=$datos->tg;
         $rut=$_SESSION["rut"];
         $sql2=$conexion->query("UPDATE usuario SET estado = 'Activo ahora' WHERE rut = '$rut'");
         

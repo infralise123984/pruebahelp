@@ -16,7 +16,7 @@
                         //echo 'las contraseñas son distintas';
                         $update = $conexion->query("UPDATE usuario SET contraseña ='$password'WHERE rut='$rut' ");
                         echo '<script language="javascript">alert("Contraseña cambiada exitosamente");</script>';  
-                        header("location: index.php");
+                        header("location: ../opciones.php");
                         
 
                     }else{

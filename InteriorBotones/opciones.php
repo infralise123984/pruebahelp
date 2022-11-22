@@ -25,8 +25,11 @@ if(empty($_SESSION)){
                 <div class="col">
                     <div class="row d-flex justify-content-between">
                         <a href="opciones/subirfoto.php" ><input name="btncambiarfoto" class="btn btn-primary" type="submit" value="cambiar foto de perfil"></a>
-                        <a href="opciones/cambiarredes.php" ><input name="btnredes" class="btn btn-primary" type="submit" value="cambiar redes sociales"></a>            
+                        <br><br>
+                        <a href="opciones/cambiar_rrss.php" ><input name="btnredes" class="btn btn-primary" type="submit" value="cambiar redes sociales"></a>            
+                        <br><br>
                         <a href="opciones/cambiarmail.php" ><input name="btncambiarmail" class="btn btn-primary" type="submit" value="cambiar email"></a>
+                        <br><br>
                         <a href="opciones/cambiarcontraseña.php" ><input name="btncambiarmail" class="btn btn-primary" type="submit" value="cambiar contraseña"></a>  
                     </div>
                 </div>        

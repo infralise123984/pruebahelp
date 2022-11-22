@@ -287,7 +287,7 @@ main .publicaciones nav{
 
 iframe{
     width:150vh; 
-    height:100vh; 
+    height:90vh; 
     /* border: 1px solid black; */
     overflow: hidden;
 }
@@ -314,5 +314,15 @@ iframe{
     color:#000000; 
     text-decoration:none; 
     cursor:pointer;  
+}
+
+.fondologin{ 
+    top: 0;
+    left: 0;
+    height: 90vh;
+    width: 90vh;
+    object-fit: cover;
+    object-position: center;
+    
 }
 

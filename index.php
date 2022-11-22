@@ -52,11 +52,7 @@ if(empty($_SESSION)){
                     
                 </nav>
             </div>
-            
-            <!-- barra lateral derecha -->
-            <div class="col-1 barra-lateral-derecha d-flex justify-content-between">
-                Contenido barra lateral derecha WIP
-            </div>
+
             <!-- publicacion -->
             
                 

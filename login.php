@@ -14,9 +14,10 @@
 
 </head>
 <body>
-    <div class="container w-75 bg-primary mt-5 rounded shadow">
+    <div class="container w-70 bg-primary mt-5 rounded shadow">
         <div class="row align-items-stretch">          
-            <div class="col bg d-none d-lg-block col-md-5 col-lg-5 col-lg-5 col-xl-6 rounded">                                            
+            <div class="col bg d-none d-lg-block col-xl-6 rounded">  
+                <img src="img/fondohelp.jpg" class="fondologin rounded" alt="">                                          
             </div>
             <div class="col bg-white p-5 rounded-end">
                 <div class="text-end">

@@ -24,10 +24,10 @@ error_reporting(E_ALL ^ E_NOTICE);
                                     <p class="card-text "><strong>Area de trabajo: </strong> '.$row['desc_trabajo'].'</p>
 
                                     <p><strong>Redes Sociales: </strong>
-                                        <span class="badge bg-danger">Instagram</span> 
-                                        <span class="badge bg-primary">Facebook</span>
-                                        <span class="badge bg-success">WhatsApp</span>
-                                        <span class="badge bg-info">Telegram</span>
+                                    <a href="'.$row['ig'].'" target="_blank"><span class="badge bg-danger">Instagram</span></a>
+                                    <a href="'.$row['fb'].'" target="_blank"> <span class="badge bg-primary">Facebook</span></a>
+                                    <a href="https://web.whatsapp.com/send?phone='.$row['ws'].'" target="_blank"><span class="badge bg-success">WhatsApp</span></a>
+                                    <a href="'.$row['tg'].'" target="_blank"><span class="badge bg-info">Telegram</span></a>
                                     </p>
                                     </div>
                                     <div class="col text-center d-flex justify-content-between">
