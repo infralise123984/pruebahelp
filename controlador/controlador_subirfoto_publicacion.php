@@ -1,5 +1,8 @@
 <?php
 if (isset($_POST['btncrearpubli']) && isset($_FILES['imagen'])) {
+	if (!empty ($_POST["titulo"]) and !empty ($_POST["comentario"])) {
+		
+	
 	$titulo=$_POST['titulo'];
 	$desc=$_POST['comentario'];
 	$img_name = $_FILES['imagen']['name'];
@@ -27,7 +30,10 @@ if (isset($_POST['btncrearpubli']) && isset($_FILES['imagen'])) {
 			header("location: publicaciones.php");  
 
 		}
+	}else{
+		echo '<script language="javascript">alert("Por favor no dejar los cuadros de texto vacios");</script>';
 	}
+}
 
 		
 

@@ -26,17 +26,13 @@ if(empty($_SESSION)){
                 header("location: publicaciones.php");
             } ?>
             </form>
-            <div class="mx-auto d-flex m-lg-auto justify-content-between">
+            
                 
                 <?php  
                     include "../controlador/controlador_ver_publicaciones.php";   
                     ?>
-                  
-       
-            
-            
             <!-- div cerrador del contenido principal -->
-            </div> 
+             
     </main>
    <script src="js/jquery-3.6.1.min.js"></script>
    <script src="js/menu.js"></script>

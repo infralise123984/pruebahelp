@@ -45,8 +45,15 @@ if(empty($_SESSION)){
             
         }
     ?>
+    <table class="float">
+        <tr>
+            <td><input name="btncrear" class="" type="submit" value="crear publicacion"></td>
+            <td><input name="btnvermis" class="" type="submit" value="ver mis publicaciones"></td>
+        </tr>
+
+    </table>
+   
     
-    <input name="btncrear" class="float" type="submit" value="crear publicacion">
     </form>
    
             <!-- contenido principal -->

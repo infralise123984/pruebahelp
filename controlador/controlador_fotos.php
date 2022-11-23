@@ -17,6 +17,7 @@ if (isset($_POST['subirfoto']) && isset($_FILES['my_image'])) {
 				$sql="UPDATE usuario SET img_perfil = '$new_img_name' WHERE rut='$_SESSION[rut]'";
 				mysqli_query($conexion, $sql);
 				echo '<script language="javascript">alert("Foto cambiada con exito");</script>';
+				header("location: ../opciones.php");
 		}
 		else{
 			echo '<script language="javascript">alert("porfavor elegir un archivo");</script>';

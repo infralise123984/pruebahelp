@@ -5,7 +5,14 @@ $row = mysqli_fetch_assoc($sql);
 if(mysqli_num_rows($sql) == 0){
     $output .= "No hay publicaciones disponibles";
 }elseif(mysqli_num_rows($sql) > 0){
-    $sql2=$conexion->query("SELECT * FROM publicacion ORDER BY fecha desc");
+    if(!empty($_POST["btnvermis"])){
+        $rar=$_SESSION['unique_id'];
+        $sql2=$conexion->query("SELECT * FROM publicacion where creador={$rar} ORDER BY fecha desc ");
+
+    }else{
+        $sql2=$conexion->query("SELECT * FROM publicacion ORDER BY fecha desc");
+    }
+    
     //$output .= "si hay cosas";
     while ($row = mysqli_fetch_assoc($sql2)) {
         // $outputantiguo .='
