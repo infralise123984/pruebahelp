@@ -1,5 +1,5 @@
 <?php 
-error_reporting(E_ALL ^ E_NOTICE);    
+error_reporting(E_ERROR | E_PARSE);    
                     include "../modelo/conexion.php";   
                     $id = mysqli_real_escape_string($conexion, $_GET['id']);
                     $sql=$conexion->query("SELECT * FROM usuario INNER JOIN trabajos ON trabajos.id =usuario.trabajo_id  WHERE unique_id = {$id}");       
