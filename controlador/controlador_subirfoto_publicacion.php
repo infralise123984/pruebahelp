@@ -14,7 +14,8 @@ if (isset($_POST['btncrearpubli']) && isset($_FILES['imagen'])) {
 				move_uploaded_file($tmp_name, $img_upload_path);
 	 			$sql=$conexion->query("INSERT INTO publicacion(titulo,info,creador,estado,imagen) VALUES ('$titulo','$desc','$_SESSION[unique_id]','1','$new_img_name')");
 	 			
-				 echo '<script language="javascript">alert("se subio con foto");</script>';  
+				 echo '<script language="javascript">alert("se subio con foto");</script>'; 
+				 header("location: publicaciones.php"); 
 				
 		}
 		else{
@@ -22,7 +23,8 @@ if (isset($_POST['btncrearpubli']) && isset($_FILES['imagen'])) {
 			$desc=$_POST['comentario'];
 			$sql=$conexion->query("INSERT INTO publicacion(titulo,info,creador,estado) VALUES ('$titulo','$desc','$_SESSION[unique_id]','1')");
 			
-			echo '<script language="javascript">alert("se subio sin foto");</script>'; 
+			echo '<script language="javascript">alert("se subio sin foto");</script>';
+			header("location: publicaciones.php");  
 
 		}
 	}
