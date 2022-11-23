@@ -3,7 +3,7 @@ $sql=$conexion->query("SELECT * FROM publicacion");
 $output ="";
 $row = mysqli_fetch_assoc($sql);
 if(mysqli_num_rows($sql) == 0){
-    $output .= "No hay publicaciones disponibles";
+    $output = "No hay publicaciones disponibles";
 }elseif(mysqli_num_rows($sql) > 0){
     if(!empty($_POST["btnvermis"])){
         $rar=$_SESSION['unique_id'];
