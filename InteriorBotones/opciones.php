@@ -30,7 +30,10 @@ if(empty($_SESSION)){
                         <br><br>
                         <a href="opciones/cambiarmail.php" ><input name="btncambiarmail" class="btn btn-primary" type="submit" value="cambiar email"></a>
                         <br><br>
-                        <a href="opciones/cambiarcontraseña.php" ><input name="btncambiarmail" class="btn btn-primary" type="submit" value="cambiar contraseña"></a>  
+                        <a href="opciones/cambiarcontraseña.php" ><input name="btncambiarmail" class="btn btn-primary" type="submit" value="cambiar contraseña"></a> 
+                        <br><br> 
+                        <a href="opciones/cambiardatosperfil.php" ><input name="btncambiardatos" class="btn btn-primary" type="submit" value="cambiar datos del perfil"></a>
+                        
                     </div>
                 </div>        
             <!-- div cerrador del contenido principal -->

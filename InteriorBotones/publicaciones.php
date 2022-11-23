@@ -22,10 +22,10 @@ if(empty($_SESSION)){
         <div class="container">
             <div class="col-12 buscar ">
                 <!-- formulario de barra de busqueda -->
-                <form action="">
+                <form action="" method=post>
                     <div class="row g-2 g-0">
                         <div class="col-10">
-                            <input type="text" name="" id="" placeholder="Buscar">
+                            <input type="text" name="barrabuscar" id="" placeholder="Buscar">
                                 </div>
                             <div class="col-2">
                             <input name="btnbuscarpubli" class="btn btn-primary" style="font-size: 1.8vh; padding: 0 1.5vh;height: 3.7vh; line-height: 1.5vh;" type="submit" value="buscar">
@@ -59,7 +59,7 @@ if(empty($_SESSION)){
             <!-- contenido principal -->
             <div class="mx-auto d-flex m-lg-auto justify-content-between"> 
                 <?php include "../modelo/conexion.php";?>
-                <div class="col publicacion" style="">                   
+                <div class="col publicacion">                   
                 <?php include "../controlador/controlador_obtener_publicaciones.php";?>               
                 </div>        
                 <!-- div cerrador del contenido principal -->

@@ -10,7 +10,14 @@ if(mysqli_num_rows($sql) == 0){
         $sql2=$conexion->query("SELECT * FROM publicacion where creador={$rar} ORDER BY fecha desc ");
 
     }else{
-        $sql2=$conexion->query("SELECT * FROM publicacion ORDER BY fecha desc");
+        if(!empty($_POST['btnbuscarpubli'])){
+            $busqueda=$_POST['barrabuscar'];
+            $sql2=$conexion->query("SELECT * FROM publicacion WHERE titulo LIKE '%$busqueda%' OR info like '%$busqueda%' ORDER BY fecha desc");
+
+        }else{
+            $sql2=$conexion->query("SELECT * FROM publicacion ORDER BY fecha desc");
+        }
+        
     }
     
     //$output .= "si hay cosas";
