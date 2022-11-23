@@ -8,7 +8,7 @@ if(!empty($_POST["btnregistrar"])){
         $mail=$_POST["email"];
         $contrasena=$_POST["password"];
         $ran_id = rand(time(), 100000000);
-        $sql=$conexion->query("INSERT INTO usuario values ('$rut','$ran_id', '$nombre', '$apellido', '$mail', '$contrasena','1','defaultpf.png','Desconectado ahora')");
+        $sql=$conexion->query("INSERT INTO usuario values ('$rut','$ran_id', '$nombre', '$apellido', '$mail', '$contrasena','1','defaultpf.png','Desconectado ahora','No tiene','No tiene','No tiene','No tiene')");
         header("location: login.php");
        
        

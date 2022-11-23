@@ -23,17 +23,16 @@
         <div class="row align-items-stretch">
 
             <div class="col bg-white p-5 rounded">
-                <form action=""method=post>
-                    <select name="" id="" >
+                <form action="" method=post>
+                    <select name="trabajos" id="" >
                     <?php 
                     include "../../modelo/conexion.php";
-                     include "../../modelo/controlador_opciones_trabajo.php";
-                    ?>      
+                     include "../../controlador/controlador_opciones_trabajo.php";
+                     
+                    ?>  
+
                     </select>
-                    
-                
-
-
+                    <input name="btntrabajo" class="btn btn-primary" type="submit" value="Cambiar">                     
                 </form>
 
                 
