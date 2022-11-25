@@ -26,12 +26,33 @@ if(empty($_SESSION)){
                 header("location: publicaciones.php");
             } ?>
             </form>
-            
-                
+            <!-- div publicacion -->
+            <div>
                 <?php  
                     include "../controlador/controlador_ver_publicaciones.php";   
                     ?>
-            <!-- div cerrador del contenido principal -->
+            </div>
+
+            <!-- div comentarios -->
+            <div class="col">
+            <form action="" method="post">
+            <h2 class="fw-bold text-center py-5">Comentarios</h2>
+            <?php include "../controlador/controlador_comentario_crear.php";   ?>
+                <div class="row">
+                    <textarea name="comentario" class="rounded" id="" cols="120" rows="7"></textarea>
+                </div>
+                <input name="btncomentar" class="btn btn-primary" type="submit" value="Comentar">
+                </form>
+
+                <div>
+                    <?php include "../controlador/controlador_comentario_obtener.php";?>
+                </div>
+
+
+
+            </div>
+           
+         
              
     </main>
    <script src="js/jquery-3.6.1.min.js"></script>
