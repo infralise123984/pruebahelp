@@ -1,0 +1,14 @@
+usuario 1
+mail:Bodoque123@gmail.com
+contraseña:Juancarlosbodoque123
+
+usuario 2
+mail:Alerojas@hotmail.com
+contraseña:Alejorojas1234#
+
+usuario 3
+rut:33333333-3
+nombre:Mauricio	
+apellido:Paredes
+mail:Mauriparedes@gmail.com
+contraseña:ParedesMauricio123

@@ -32,7 +32,7 @@ if(empty($_SESSION)){
                 <input type="file" name="my_image">
 
                 <!-- <input type="submit" name="subirfoto" value="Upload"> -->
-                <input name="subirfoto" class="btn btn-primary" type="submit" value="Upload">
+                <input name="subirfoto" class="btn btn-primary" type="submit" value="Cambiar foto">
             
                 </form>              
             <!-- div cerrador del contenido principal -->
