@@ -63,7 +63,7 @@
                     </div>
                     <!-- boton para registrar -->
                     <div class="d-grid">
-                    <input name="btnregistrar" class="btn btn-primary" type="submit" value="registrar">
+                    <input name="btnregistrar" class="btn btn-dark" type="submit" value="registrar">
                     </div>
                     <!-- añadir tabla en la cual hayan 2 opciones, 1.no trabajor o 2.Trabajador -->
                     <div class="my-3">

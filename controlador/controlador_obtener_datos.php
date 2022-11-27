@@ -26,10 +26,6 @@ if (mysqli_num_rows($sql) > 0) {
                                         <div class="row justify-content-center text-center">
                                         </div>
                             </div>
-                                <div class="col text-center m-lg-auto justify-content-between">
-                                    <h2><strong> 3.4/5 </strong></h2>                    
-                                    <p><small>Estrellas</small></p>
-                                </div>
                         </div>                       
                     </div>';
 }   

@@ -46,7 +46,7 @@
 
                     <div class="d-grid">
                     
-                        <input name="btniniciar" class="btn btn-primary" type="submit" value="iniciar">
+                        <input name="btniniciar" class="btn btn-dark" type="submit" value="iniciar">
                     </div>
                     <div class="my-3">
 					<!--registrar -->

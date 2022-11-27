@@ -24,15 +24,15 @@ if(empty($_SESSION)){
             <div class="mx-auto d-flex m-lg-auto justify-content-between"> 
                 <div class="col">
                     <div class="row d-flex justify-content-between">
-                        <a href="opciones/subirfoto.php" ><input name="btncambiarfoto" class="btn btn-primary" type="submit" value="cambiar foto de perfil"></a>
+                        <a href="opciones/subirfoto.php" ><input name="btncambiarfoto" class="btn btn-dark" type="submit" value="cambiar foto de perfil"></a>
                         <br><br>
-                        <a href="opciones/cambiar_rrss.php" ><input name="btnredes" class="btn btn-primary" type="submit" value="cambiar redes sociales"></a>            
+                        <a href="opciones/cambiar_rrss.php" ><input name="btnredes" class="btn btn-dark" type="submit" value="cambiar redes sociales"></a>            
                         <br><br>
-                        <a href="opciones/cambiarmail.php" ><input name="btncambiarmail" class="btn btn-primary" type="submit" value="cambiar email"></a>
+                        <a href="opciones/cambiarmail.php" ><input name="btncambiarmail" class="btn btn-dark" type="submit" value="cambiar email"></a>
                         <br><br>
-                        <a href="opciones/cambiarcontraseña.php" ><input name="btncambiarmail" class="btn btn-primary" type="submit" value="cambiar contraseña"></a> 
+                        <a href="opciones/cambiarcontraseña.php" ><input name="btncambiarmail" class="btn btn-dark" type="submit" value="cambiar contraseña"></a> 
                         <br><br> 
-                        <a href="opciones/cambiardatosperfil.php" ><input name="btncambiardatos" class="btn btn-primary" type="submit" value="cambiar datos del perfil"></a>
+                        <a href="opciones/cambiardatosperfil.php" ><input name="btncambiardatos" class="btn btn-dark" type="submit" value="cambiar datos del perfil"></a>
                         
                     </div>
                 </div>        

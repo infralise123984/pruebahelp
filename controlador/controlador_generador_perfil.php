@@ -33,10 +33,6 @@ error_reporting(E_ERROR | E_PARSE);
                                         </div>
 
                             </div>
-                                <div class="col text-center m-lg-auto justify-content-between">
-                                    <h2><strong> 3.4/5 </strong></h2>                    
-                                    <p><small>Estrellas</small></p>
-                                </div>
 
                         </div>                       
 
@@ -73,10 +69,6 @@ error_reporting(E_ERROR | E_PARSE);
                                         </div>
 
                             </div>
-                                <div class="col text-center m-lg-auto justify-content-between">
-                                    <h2><strong> 3.4/5 </strong></h2>                    
-                                    <p><small>Estrellas</small></p>
-                                </div>
 
                         </div>                       
 

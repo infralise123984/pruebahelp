@@ -15,7 +15,7 @@ if(empty($_SESSION)){
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/estilos.css">
     <link rel="shortcut icon" href="img/logo.png">
-    <title>iHelp</title>
+    <title>RancaguaHelp</title>
 </head>
 <body>
     <header>
@@ -26,13 +26,8 @@ if(empty($_SESSION)){
                 </div>
                 
                 <!-- barra de navegacion de iconos -->
-                <!-- barra de navegacion de iconos -->
-                <nav class="col-12 col-sm-3 col-lg-2 menu d-flex justify-content-between ml-auto mb-2 mb-sm-0">
-                    <a href="#"><i class="icon-users"></i></a>
-                    <a href="#"><i class="icon-bell-alt"></i></a>  
-                    <a href="#"><i class="icon-chat"></i></a>                      
-                    <a href="profile.php" class="imagen"><img src="img/perfil.png" width="22" height="22" alt=""></a>
-                    
+                <nav class="col-12 col-sm-3 col-lg-2 menu d-flex justify-content-between mx-auto mb-2 mb-sm-0">
+                <h3 class="titulo">RancaguaHelp</h3>
                 </nav>
             </div>
         </div>
@@ -61,7 +56,7 @@ if(empty($_SESSION)){
             <div class="mx-auto d-flex justify-content-between"> 
                <!-- <iframe src="pgperfil.php" frameborder="0" style="overflow: hidden; border:none; height:900vhx;width:300vh;"></iframe> -->
 
-                    <iframe class="mx-auto" src="" style="" name="contenido" id="contenido" title="contenido" ></iframe>
+                    <iframe class="mx-auto" src="interiorBotones/contenidomain.php" style="" name="contenido" id="contenido" title="contenido" ></iframe>
                
             <!-- div cerrador del contenido principal -->
             </div>                     

@@ -266,7 +266,7 @@ input:checked + .slider {
 }
 
 .card-block{
-    background: linear-gradient(to right, rgb(248, 253, 255),rgb(255, 244, 244) );
+    background: rgba(121, 119, 118, 0.315);
     border-radius: 2.5vh;
   
 }
@@ -331,4 +331,8 @@ textarea {
     overflow-y: auto;
     word-wrap:break-word
     }
+
+.titulo{
+    color: #f0b923;
+}
 
