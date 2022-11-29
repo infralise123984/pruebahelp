@@ -35,17 +35,17 @@
                     <div class="mb-4">
                         <!-- contraseña actual formulario oculta con formato . 8 caracteres minimo, una mayuscula y almenos un numero -->
                         <label for="password" class="form-label">Contraseña actual</label>
-                        <input type="password" class="form-control" name="actualpassword" placeholder="Ejemplo: Contrasena4" id="pswrd" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Almenos 1 mayuscula, minimo 8 caracteres y un numero"> 
+                        <input type="text" class="form-control" name="actualpassword" placeholder="Ejemplo: Contrasena4" id="pswrd" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Almenos 1 mayuscula, minimo 8 caracteres y un numero"> 
                     </div>        
                     <div class="mb-4">
                         <!-- contraseña nueva formulario oculta con formato . 8 caracteres minimo, una mayuscula y almenos un numero -->
                         <label for="password" class="form-label">Nueva contraseña</label>
-                        <input type="password" class="form-control" name="newpassword" placeholder="Ejemplo: Contrasena42" id="pswrd" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Almenos 1 mayuscula, minimo 8 caracteres y un numero"> 
+                        <input type="text" class="form-control" name="newpassword" placeholder="Ejemplo: Contrasena42" id="pswrd" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Almenos 1 mayuscula, minimo 8 caracteres y un numero"> 
                     </div>
                     <div class="mb-4">
                         <!-- confirmacion de contraseña funcional -->
                         <label for="password" class="form-label">Confirmar  nueva contraseña</label>
-                        <input type="password" class="form-control" name="newpassword2" placeholder="Ejemplo: Contrasena42" id="pswrd" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}">
+                        <input type="tex" class="form-control" name="newpassword2" placeholder="Ejemplo: Contrasena42" id="pswrd" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}">
                         <input type="checkbox" onclick="toggleVisibility()"/>Mostrar Contraseña
                     </div>
                     <!-- boton para cambiar la contraseña -->
