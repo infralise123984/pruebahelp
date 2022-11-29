@@ -12,3 +12,11 @@ nombre:Mauricio
 apellido:Paredes
 mail:Mauriparedes@gmail.com
 contraseña:ParedesMauricio123
+
+mailnuevo:Mauriparedesnuevo@gmail.com
+contraseñanueva:ParedesMauricio12344
+
+instagram:https://www.instagram.com/cuantadeprueba
+facebook:https://www.facebook.com/machaliconectado.cl
+whatsapp:912312312
+telegram:https://t.me/cuentadeprueba
