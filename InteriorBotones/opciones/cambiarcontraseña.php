@@ -46,7 +46,6 @@
                         <!-- confirmacion de contraseña funcional -->
                         <label for="password" class="form-label">Confirmar  nueva contraseña</label>
                         <input type="tex" class="form-control" name="newpassword2" placeholder="Ejemplo: Contrasena42" id="pswrd" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}">
-                        <input type="checkbox" onclick="toggleVisibility()"/>Mostrar Contraseña
                     </div>
                     <!-- boton para cambiar la contraseña -->
                     <div class="d-grid">
