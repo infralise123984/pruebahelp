@@ -28,7 +28,7 @@ if(empty($_SESSION)){
                             <input type="text" name="barrabuscar" id="" placeholder="Buscar">
                                 </div>
                             <div class="col-2">
-                            <input name="btnbuscarpubli" class="btn btn-primary" style="font-size: 1.8vh; padding: 0 1.5vh;height: 3.7vh; line-height: 1.5vh;" type="submit" value="buscar">
+                            <input name="btnbuscarpubli" class="btn btn-warning" style="font-size: 1.8vh; padding: 0 1.5vh;height: 3.7vh; line-height: 1.5vh;" type="submit" value="buscar">
                         </div>
                     </div>
                 </form>         
@@ -47,8 +47,8 @@ if(empty($_SESSION)){
     ?>
     <table class="float">
         <tr>
-            <td><input name="btncrear" class="" type="submit" value="crear publicacion"></td>
-            <td><input name="btnvermis" class="" type="submit" value="ver mis publicaciones"></td>
+            <td><input name="btncrear" class="btn btn-dark" type="submit" value="crear publicacion"></td>
+            <td><input name="btnvermis" class="btn btn-warning" type="submit" value="ver mis publicaciones"></td>
         </tr>
 
     </table>

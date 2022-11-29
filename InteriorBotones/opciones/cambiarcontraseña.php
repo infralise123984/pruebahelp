@@ -49,7 +49,7 @@
                     </div>
                     <!-- boton para cambiar la contraseña -->
                     <div class="d-grid">
-                    <input name="btncambiar" class="btn btn-primary" type="submit" value="cambiar">
+                    <input name="btncambiar" class="btn btn-dark" type="submit" value="cambiar">
                     </div>
                     <!-- añadir tabla en la cual hayan 2 opciones, 1.no trabajor o 2.Trabajador -->
                 </form>

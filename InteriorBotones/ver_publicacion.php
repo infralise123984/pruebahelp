@@ -21,7 +21,7 @@ if(empty($_SESSION)){
     <main class="container m-lg-auto justify-content-between"> 
             <!-- contenido principal -->  
             <form action="" method="post">
-            <input name="btnvolver" class="btn btn-primary" type="submit" value="volver"> 
+            <input name="btnvolver" class="btn btn-dark" type="submit" value="volver"> 
             <?php if(!empty($_POST['btnvolver'])){
                 header("location: publicaciones.php");
             } ?>
@@ -41,7 +41,7 @@ if(empty($_SESSION)){
                 <div class="row">
                     <textarea name="comentario" class="rounded" id="" cols="120" rows="7"></textarea>
                 </div>
-                <input name="btncomentar" class="btn btn-primary" type="submit" value="Comentar">
+                <input name="btncomentar" class="btn btn-dark" type="submit" value="Comentar">
                 </form>
 
                 <div>

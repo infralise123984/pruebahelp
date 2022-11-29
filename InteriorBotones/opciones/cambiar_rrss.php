@@ -45,7 +45,7 @@ if(empty($_SESSION)){
                     </div>
 
                 <!-- <input type="submit" name="subirfoto" value="Upload"> -->
-                <input name="btnredes" class="btn btn-primary" type="submit" value="Cambiar redes">
+                <input name="btnredes" class="btn btn-dark" type="submit" value="Cambiar redes">
                 
             
                 </form>              
